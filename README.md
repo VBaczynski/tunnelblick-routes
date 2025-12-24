@@ -41,6 +41,12 @@ utun=$(ifconfig | grep utun | grep 1500 | cut -d : -f1 | tail -1)
 # Routes will be appended below by the scripts...
 ```
 
+This file `connected.sh` must have execute permissions:
+
+```bash
+sudo chmod u+x ~/Library/Application\ Support/Tunnelblick/Configurations/NAME.tblk/Contents/Resources/connected.sh
+```
+
 ### 2. Install Scripts
 Download or copy route-add.sh and route-del.sh to a directory in your path (e.g., ~/bin).
 
